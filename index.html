@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">MyStore</div>
+    <!-- <nav>
+      <a href="#">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav> -->
+    <div class="search-bar">
+      <input type="text" placeholder="Search for products...">
+      <button>Search</button>
+    </div>
+    <button class="login-btn">Cart</button>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <img src="https://plus.unsplash.com/premium_photo-1664527306363-7a5798f0621c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Groceries Banner">
+    <h1>Fresh Groceries Delivered to Your Doorstep</h1>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-container">
+        <div class="category-card">
+          
+          <button onclick="filterData('Vegetables')">Vegetables</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Fruits')">Fruits</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Dairy')">Dairy</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Snacks')">Snacks</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Bakery')">Bakery</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Grains')">Grains</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Condiments')">Condiments</button>
+        </div>
+        <div class="category-card">
+          
+          <button onclick="filterData('Beverages')">Beverages</button>
+        </div>
+      </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Popular Products</h2>
+    <div class="product-grid" id = "product-card">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 MyStore. All rights reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
